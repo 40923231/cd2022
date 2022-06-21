@@ -609,7 +609,13 @@ if  (auxiliaryData[1]==97) then
     -- left key</pre>
 <code class="lua keyword"><img alt="" height="304" src="/images/w15.jpg" width="540"/><br/></code></div>
 <h2>w16</h2>
-<h3>Visualization Stream</h3>
+<p>利用 tkinter GUI 介面 slider 控制 uArm 機械手臂:</p>
+<p><a href="https://mde.tw/cd2022_guide/downloads/w15_uarm_tkinter_control.7z">w15_uarm_tkinter_control.7z</a></p>
+<ol>
+<li>解開壓縮檔案.</li>
+<li>以 CoppeliaSim 4.3.0 rev3 開啟 uarm_nx_tkinter_gui_control_exhaustive.simscene.xml 或 uarm_nx_tkinter_gui_control.ttt 場景後, Start Simulation.</li>
+<li>以 SciTE 執行 uarm_tkinter_control.py, 可透過網路操控伺服器上的 uArm 機械手臂.</li>
+</ol><h3>Visualization Stream</h3>
 <ol>
 <li>在 uArm 場景伺服器端, 解開壓縮檔案後, 以 CoppeliaSim 4.3.0 rev3 開啟 uarm_nx_tkinter_gui_control.ttt 或 uarm_nx_tkinter_gui_control_exhaustive.simscene.xml.</li>
 <li>啟動模擬之前, 從 Modules 下拉式表單中的 Connectivity 右方表單中, 點選 Visualization Stream, 表示要啟動場景的視覺串流伺服器.</li>
