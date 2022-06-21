@@ -140,8 +140,13 @@ img.add_border {
           
         </header>
     <div id="tipue_search_content">w16 << <a href='w16.html'>Previous</a> <a href='w17.html'>Next</a> >> w17<br /><h1>Visualization Stream</h1>
-<p></p>
-<br />w16 << <a href='w16.html'>Previous</a> <a href='w17.html'>Next</a> >> w17</div>
+<ol>
+<li>在 uArm 場景伺服器端, 解開壓縮檔案後, 以 CoppeliaSim 4.3.0 rev3 開啟 uarm_nx_tkinter_gui_control.ttt 或 uarm_nx_tkinter_gui_control_exhaustive.simscene.xml.</li>
+<li>啟動模擬之前, 從 Modules 下拉式表單中的 Connectivity 右方表單中, 點選 Visualization Stream, 表示要啟動場景的視覺串流伺服器.</li>
+<li>確定 Visualization Stream 顯示 running 後, 啟動 uarm_nx_tkinter_gui_control 場景模擬.</li>
+<li>從 <a href="https://github.com/CoppeliaRobotics/threejsFrontend/blob/master/simAddOnVisualization%20stream.lua#L17">simAddOnVisualization stream.lua</a><span> </span>串流程式可知內定連線 port 為 23020 或可自行設定連線埠號, 並讓串流伺服器端的防火牆允許遠端特定的電腦 client 連線.</li>
+<li>最後在 client 端以 SciTE 開啟 <a href="https://github.com/mdecycu/cd2022_guide/blob/main/downloads/w15/tkinter_control/uarm_tkinter_control.py#L61">uarm_tkinter_control.py</a><span> </span>配合修改串流伺服器對應的 IP 與埠號後執行. 便可透過瀏覽器檢視經由遠端 tkinter 介面控制下的 uArm 機械手臂各軸模擬運動.</li>
+</ol><br />w16 << <a href='w16.html'>Previous</a> <a href='w17.html'>Next</a> >> w17</div>
         
     <!-- footer -->
       <div class="container">
