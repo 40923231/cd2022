@@ -623,6 +623,7 @@ if  (auxiliaryData[1]==97) then
 <li>從 <a href="https://github.com/CoppeliaRobotics/threejsFrontend/blob/master/simAddOnVisualization%20stream.lua#L17">simAddOnVisualization stream.lua</a><span> </span>串流程式可知內定連線 port 為 23020 或可自行設定連線埠號, 並讓串流伺服器端的防火牆允許遠端特定的電腦 client 連線.</li>
 <li>最後在 client 端以 SciTE 開啟 <a href="https://github.com/mdecycu/cd2022_guide/blob/main/downloads/w15/tkinter_control/uarm_tkinter_control.py#L61">uarm_tkinter_control.py</a><span> </span>配合修改串流伺服器對應的 IP 與埠號後執行. 便可透過瀏覽器檢視經由遠端 tkinter 介面控制下的 uArm 機械手臂各軸模擬運動.</li>
 </ol>
+<p>wink:</p>
 <script>
 var winkVideoData = {
   dataVersion: 1,
@@ -634,14 +635,18 @@ var winkVideoData = {
 };
 </script>
 <!-- 接下來將 mp4 檔案從 downloads 目錄取出 -->
-<div class="winkVideoContainerClass">wink:</div>
 <div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass" controls="controls" data-dirname="./../cmsimde/static" data-varname="winkVideoData" height="756" muted="true" width="1344">
 <source src="./../downloads/w16-1.mp4" type="video/mp4"/></video>
 <div class="winkVideoOverlayClass"></div>
 <div class="winkVideoControlBarClass"><button class="winkVideoControlBarPlayButtonClass"></button> <button class="winkVideoControlBarPauseButtonClass"></button>
 <div class="winkVideoControlBarProgressLeftClass"></div>
 <div class="winkVideoControlBarProgressEmptyMiddleClass"></div>
-<h3>Online Exam</h3>
+<div class="winkVideoControlBarProgressRightClass"></div>
+<div class="winkVideoControlBarProgressFilledMiddleClass"></div>
+<div class="winkVideoControlBarProgressThumbClass"></div>
+</div>
+<div class="winkVideoPlayOverlayClass"></div>
+</div><h3>Online Exam</h3>
 <p>1.已知左側綠色底座的 uArm 機械手臂, 其基座座標原點位於絕對座標 (1.0, 0.25, 0), 啟動模擬後 green_suctionpad_frame 座標原點則位於 (0.22859, 0.26047, 0.36576), 請列出運算式說明, 啟動模擬後 joint1, joint2 與 joint3 分別以逆時針旋轉 5 度後, 求 green_suctionpad_frame 的絕對座標值.</p>
 <p><strong>Ans: </strong>x:+1.0000</p>
 <p>         y:+0.2500</p>
@@ -692,4 +697,4 @@ var winkVideoData = {
 </div>
 </div><h2>w17</h2>
 <p></p>
-<div class="winkVideoPlayOverlayClass"></div></div></div>
+<div class="winkVideoPlayOverlayClass"></div>
